@@ -1,0 +1,111 @@
+version: "2"
+type: backend
+tech_stack:
+  - Node.js
+  - Express.js
+  - Supabase (PostgreSQL)
+  - JWT Authentication
+  - Axios
+  - bcryptjs
+routes:
+  - path: /api/auth/register
+    method: POST
+    description: User registration with name, email, password, and optional personal details
+    auth_required: false
+  - path: /api/auth/login
+    method: POST
+    description: User login with email and password, returns JWT token
+    auth_required: false
+  - path: /api/auth/me
+    method: GET
+    description: Get currently logged-in user profile
+    auth_required: true
+  - path: /api/symptoms/check
+    method: POST
+    description: Analyze symptoms using local engine and optional n8n AI webhook
+    auth_required: false
+  - path: /api/symptoms/history
+    method: GET
+    description: Get history of symptom checks for the authenticated user
+    auth_required: true
+  - path: /api/doctors
+    method: GET
+    description: List doctors with optional specialty and city filters
+    auth_required: false
+  - path: /api/doctors/:id
+    method: GET
+    description: Get detailed profile of a specific doctor
+    auth_required: false
+  - path: /api/appointments
+    method: POST
+    description: Book a new medical appointment and trigger n8n notification
+    auth_required: true
+  - path: /api/appointments/my
+    method: GET
+    description: Get list of appointments for the authenticated user
+    auth_required: true
+  - path: /api/appointments/:id/cancel
+    method: PUT
+    description: Cancel an existing appointment
+    auth_required: true
+  - path: /api/firstaid
+    method: GET
+    description: List all first aid guides
+    auth_required: false
+  - path: /api/firstaid/:condition
+    method: GET
+    description: Get detailed first aid instructions for a specific condition
+    auth_required: false
+features:
+  - name: User Authentication
+    description: Complete flow for registration, login, and profile retrieval
+    files:
+      - routes/auth.js
+      - middleware/auth.js
+    endpoints:
+      - method: POST
+        path: /api/auth/register
+      - method: POST
+        path: /api/auth/login
+      - method: GET
+        path: /api/auth/me
+  - name: Symptom Analysis
+    description: Multi-stage symptom analysis combining local logic and AI webhooks
+    files:
+      - routes/symptoms.js
+      - services/aiService.js
+    endpoints:
+      - method: POST
+        path: /api/symptoms/check
+      - method: GET
+        path: /api/symptoms/history
+  - name: Appointment Management
+    description: Search for doctors and manage medical appointments
+    files:
+      - routes/doctors.js
+      - routes/appointments.js
+    endpoints:
+      - method: GET
+        path: /api/doctors
+      - method: POST
+        path: /api/appointments
+      - method: GET
+        path: /api/appointments/my
+      - method: PUT
+        path: /api/appointments/:id/cancel
+  - name: Emergency First Aid
+    description: Access life-saving first aid instructions and guides
+    files:
+      - routes/firstaid.js
+    endpoints:
+      - method: GET
+        path: /api/firstaid
+      - method: GET
+        path: /api/firstaid/:condition
+known_limitations:
+  - issue: n8n webhook is external and may timeout or fail
+    location: routes/symptoms.js, routes/appointments.js
+    impact: System falls back to local analysis or records booking without notification if n8n is unavailable
+  - issue: Fixed set of time slots for appointments
+    location: routes/appointments.js
+    impact: Simplified scheduling logic for demonstration purposes

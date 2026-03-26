@@ -1,0 +1,50 @@
+{"timestamp":"2026-03-26T13:38:53.421Z","level":"debug","message":"Generate code and execute params","context":{"projectName":"CURE CONNECT BACKEND","projectPath":"c:\\Users\\Monis\\Desktop\\CURE CONNECT\\backend","testIds":[],"serverMode":"production"}}
+{"timestamp":"2026-03-26T13:38:53.439Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:53.947Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:54.460Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:54.979Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:55.492Z","level":"info","message":"checkPortListening tcp failed, trying http fallback: 5000 localhost"}
+{"timestamp":"2026-03-26T13:38:55.538Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:55.508Z","level":"error","message":"checkPortListening http check failed: http://localhost:5000/ TypeError: fetch failed"}
+{"timestamp":"2026-03-26T13:38:55.509Z","level":"error","message":"checkPortListening failed (tcp + http): 5000 localhost"}
+{"timestamp":"2026-03-26T13:38:56.055Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:55.514Z","level":"info","message":"HTTP server started successfully on port 61022"}
+{"timestamp":"2026-03-26T13:38:55.509Z","level":"info","message":"Attempting to start server (attempt 1/3)"}
+{"timestamp":"2026-03-26T13:38:56.571Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:57.086Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:57.601Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:58.104Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:58.620Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:59.137Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:38:59.650Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:39:00.161Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:39:00.676Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:39:01.190Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:39:01.696Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:39:02.211Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:39:02.724Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:39:03.242Z","level":"error","message":"checkPortListening tcp error: 5000 localhost\nAggregateError"}
+{"timestamp":"2026-03-26T13:40:29.654Z","level":"debug","message":"Generate code and execute params","context":{"projectName":"CURE CONNECT BACKEND","projectPath":"c:\\Users\\Monis\\Desktop\\CURE CONNECT\\backend","testIds":[],"serverMode":"production"}}
+{"timestamp":"2026-03-26T13:40:29.671Z","level":"info","message":"Attempting to start server (attempt 1/3)"}
+{"timestamp":"2026-03-26T13:40:29.686Z","level":"info","message":"Attempting to start HTTP proxy (attempt 1/3)"}
+{"timestamp":"2026-03-26T13:40:29.674Z","level":"info","message":"HTTP server started successfully on port 63738"}
+{"timestamp":"2026-03-26T13:40:29.687Z","level":"info","message":"HTTP proxy started successfully on port 63740"}
+{"timestamp":"2026-03-26T13:40:31.590Z","level":"info","message":"🚀 Starting tunnel client: ddcd14b8-9efe-4361-8439-34ce0ddd8a57"}
+{"timestamp":"2026-03-26T13:40:31.590Z","level":"info","message":"📋 Config: localhost:63740 -> tun.testsprite.com:7300"}
+{"timestamp":"2026-03-26T13:40:31.591Z","level":"info","message":"⏱️ Network timeout: 10000ms, Auth: enabled"}
+{"timestamp":"2026-03-26T13:40:31.591Z","level":"info","message":"🔗 Establishing control connection..."}
+{"timestamp":"2026-03-26T13:42:06.859Z","level":"debug","message":"Generate code and execute params","context":{"projectName":"CURE CONNECT BACKEND","projectPath":"c:\\Users\\Monis\\Desktop\\CURE CONNECT\\backend","testIds":[],"serverMode":"production"}}
+{"timestamp":"2026-03-26T13:42:06.896Z","level":"info","message":"HTTP proxy started successfully on port 60367"}
+{"timestamp":"2026-03-26T13:42:06.875Z","level":"info","message":"HTTP server started successfully on port 60365"}
+{"timestamp":"2026-03-26T13:42:06.895Z","level":"info","message":"Attempting to start HTTP proxy (attempt 1/3)"}
+{"timestamp":"2026-03-26T13:42:06.863Z","level":"info","message":"Attempting to start server (attempt 1/3)"}
+{"timestamp":"2026-03-26T13:42:08.399Z","level":"info","message":"🚀 Starting tunnel client: 095b6859-1c45-4339-b423-dfd8e289db88"}
+{"timestamp":"2026-03-26T13:42:08.400Z","level":"info","message":"⏱️ Network timeout: 10000ms, Auth: enabled"}
+{"timestamp":"2026-03-26T13:42:08.400Z","level":"info","message":"🔗 Establishing control connection..."}
+{"timestamp":"2026-03-26T13:42:08.400Z","level":"info","message":"📋 Config: localhost:60367 -> tun.testsprite.com:7300"}
+{"timestamp":"2026-03-26T13:42:09.236Z","level":"info","message":"proxy: [REDACTED]tun.testsprite.com:8080"}
+{"timestamp":"2026-03-26T13:42:09.237Z","level":"info","message":"Tunnel probe attempt 1/2 through tun.testsprite.com:8080 to http://127.0.0.1:5000..."}
+{"timestamp":"2026-03-26T13:42:09.236Z","level":"info","message":"Verifying tunnel connectivity..."}
+{"timestamp":"2026-03-26T13:42:09.594Z","level":"warn","message":"Tunnel probe attempt 1 failed: read ECONNRESET — retrying in 3s..."}
+{"timestamp":"2026-03-26T13:42:09.946Z","level":"info","message":"✅ Tunnel established, remote port: 8080"}
+{"timestamp":"2026-03-26T13:42:12.607Z","level":"info","message":"Tunnel probe attempt 2/2 through tun.testsprite.com:8080 to http://127.0.0.1:5000..."}

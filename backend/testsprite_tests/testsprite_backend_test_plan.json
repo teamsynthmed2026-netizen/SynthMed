@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TC001",
+    "title": "user_registration_with_valid_data",
+    "description": "Test the POST /api/auth/register endpoint with valid user data including optional fields to ensure successful registration, receiving a 201 status with user id and JWT token."
+  },
+  {
+    "id": "TC002",
+    "title": "user_login_with_valid_credentials",
+    "description": "Test the POST /api/auth/login endpoint with valid email and password to verify successful login and receipt of a JWT token."
+  },
+  {
+    "id": "TC003",
+    "title": "get_authenticated_user_profile",
+    "description": "Test the GET /api/auth/me endpoint with a valid JWT token to retrieve the authenticated user's profile information."
+  },
+  {
+    "id": "TC004",
+    "title": "symptom_analysis_with_and_without_authentication",
+    "description": "Test the POST /api/symptoms/check endpoint with symptoms data both with and without JWT token to verify local analysis and optional n8n AI enrichment, including fallback behavior when n8n is unavailable."
+  },
+  {
+    "id": "TC005",
+    "title": "get_symptom_check_history_authenticated_user",
+    "description": "Test the GET /api/symptoms/history endpoint with a valid JWT token to retrieve the authenticated user's symptom check history."
+  },
+  {
+    "id": "TC006",
+    "title": "list_doctors_with_filters_and_without_filters",
+    "description": "Test the GET /api/doctors endpoint with specialty and city filters as well as without filters to verify correct listing and ordering of doctors, including handling of non-existent specialties."
+  },
+  {
+    "id": "TC007",
+    "title": "get_doctor_profile_by_id",
+    "description": "Test the GET /api/doctors/:id endpoint with a valid doctor id to retrieve detailed doctor profile information."
+  },
+  {
+    "id": "TC008",
+    "title": "book_appointment_with_conflict_detection",
+    "description": "Test the POST /api/appointments endpoint with valid appointment data and JWT token to create a new appointment, verify conflict detection prevents double booking, and confirm asynchronous n8n webhook triggering with graceful degradation."
+  },
+  {
+    "id": "TC009",
+    "title": "list_user_appointments",
+    "description": "Test the GET /api/appointments/my endpoint with a valid JWT token to retrieve the list of appointments for the authenticated user."
+  },
+  {
+    "id": "TC010",
+    "title": "cancel_appointment_and_verify_status_update",
+    "description": "Test the PUT /api/appointments/:id/cancel endpoint with a valid JWT token to cancel an existing appointment and verify the status update is reflected in subsequent appointment listings."
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "commited",
+  "type": "backend",
+  "scope": "codebase",
+  "localEndpoint": "http://127.0.0.1:5000",
+  "loginUser": "monis",
+  "loginPassword": "123456789",
+  "executionArgs": {
+    "projectName": "CURE CONNECT BACKEND",
+    "projectPath": "c:\\Users\\Monis\\Desktop\\CURE CONNECT\\backend",
+    "testIds": [],
+    "additionalInstruction": "",
+    "serverMode": "production",
+    "envs": {
+      "API_KEY": "sk-user-cETduAcVuL_uuziUfluo1iuS7FCfmy6UOEFaiyylsUsQTJ8z39vRzdOojv7kWcb8xaYpw0L79Sk8F3LrI44RhNjcZmQg2fckIk59hD_lwfl45FnMx3ThzocpIMxCidJUKuc"
+    }
+  },
+  "serverPort": 60365,
+  "proxy": "http://095b6859-1c45-4339-b423-dfd8e289db88:azoOAQ6xKEGt75pDlGfJxyDwamRZOo5H@tun.testsprite.com:8080"
+}
